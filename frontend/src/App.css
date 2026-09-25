@@ -1,5 +1,5 @@
 body{
-  background-image: url(../public/Dark\ Mode_Wallpaper.jpg);
+  background-image: url(/Dark\ Mode_Wallpaper.jpg);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -21,21 +21,37 @@ body{
 .navbar span{
   display:inline-block;
   margin-top:20px;
+  font-family: "Imperial Script", cursive;
+  font-size: 24px;
+  cursor:pointer;
 }
 
 .navbar li{
   display:flex;
-  justify-content: center;
+  justify-content:left;
   align-items: center;
-  gap:5px;
+  gap:9px;
+  cursor:pointer;
+  transition: color 0.2s ease;
+  font-size:13px;
+}
+
+.navbar li:hover{
+  color:rgb(163, 97, 97);
+}
+
+.navbar li svg{
+  width:13px;
+  height:13px;
 }
 
 .navbar ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-top:50px;
+  padding-top:50px;
   display:flex;
   flex-direction:column;
-  gap:15px;
+  gap:20px;
+  padding-left: 53px;
 }
