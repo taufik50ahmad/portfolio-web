@@ -1,4 +1,10 @@
-.intro{
-    outline: none;
-    border: none;
+.intro {
+    margin-top:50px;
+    margin-left:50px;
+    font-size:11px;
+}
+
+p{
+    width:410px;
+    text-align:justify;
 }

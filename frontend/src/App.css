@@ -8,19 +8,20 @@ body{
 
 .container{
   display: flex;
-  gap: 8px;
 }
 
 .navbar{
-  width: 250px;
+  width: 200px;
   height: 100vh;
-  border-right: 3px solid white;
+  border-right: 1px solid rgb(39, 39, 39);
   text-align:center;
+  flex-shrink: 0;
 }
 
 .navbar span{
   display:inline-block;
   margin-top:20px;
+  margin-right:9px;
   font-family: "Imperial Script", cursive;
   font-size: 24px;
   cursor:pointer;
