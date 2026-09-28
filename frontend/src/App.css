@@ -4,6 +4,18 @@ body{
   background-position: center top;
   background-repeat: no-repeat;
   margin:0;
+  
+  color: white;
+}
+
+body:has(.toggle-switch.active){
+  background-image: url(/Light\ Mode_Wallpaper.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin:0;
+
+  color:black;
 }
 
 .container{
@@ -16,6 +28,10 @@ body{
   border-right: 1px solid rgb(39, 39, 39);
   text-align:center;
   flex-shrink: 0;
+
+  display:flex;
+  flex-direction: column;
+  align-items:center;
 }
 
 .logo{
@@ -29,16 +45,14 @@ body{
 
 .navbar li{
   display:flex;
-  justify-content:left;
   align-items: center;
   gap:9px;
   cursor:pointer;
-  transition: color 0.2s ease;
   font-size:13px;
-}
 
-.navbar li:hover{
-  color:rgb(163, 97, 97);
+  border-radius:18px;
+  padding: 10px 15px 10px 15px;
+
 }
 
 .navbar li svg{
@@ -53,8 +67,7 @@ body{
   padding-top:50px;
   display:flex;
   flex-direction:column;
-  gap:20px;
-  padding-left: 53px;
+  gap:1px;
 }
 
 .toggle-switch{
@@ -62,20 +75,23 @@ body{
   height:24px;
   border:none;
   border-radius:20px;
-  background:#dddd;
+  background:#84abff;
   position:relative;
   cursor:pointer;
+  box-shadow:0px 0px 6px inset#15282b
 }
 
 .toggle-circle{
   width:20px;
   height:20px;
-  background:#a54141dd;
+  background:#ffffff;
   border:none;
   border-radius:50%;
   position:absolute;
   top:2px;
   left:2px;
+  box-shadow: 0px 0px 3px inset #202020;
+  transition: transform 0.3s ease;
 }
 
 .toggle{
@@ -94,4 +110,27 @@ body{
 .toggle .MoonSun svg {
   width: 20px;
   height: 20px;
+}
+
+.toggle-switch.active .toggle-circle{
+  transform: translateX(25px)
+}
+
+.navbar .button-active{
+  background: rgb(59, 59, 59);
+}
+
+.navbar:has(.toggle-switch.active) .button-active{
+  background: rgb(176, 201, 255);
+  color:#0051ff
+}
+
+.navbar li:hover{
+  color:#5e91ff;
+  transition: color 0.2s ease;
+}
+
+.navbar:has(.toggle-switch.active) li:hover{
+  color:#0051ff;
+  transition: color 0.2s ease;
 }
