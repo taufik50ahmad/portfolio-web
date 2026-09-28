@@ -18,7 +18,7 @@ body{
   flex-shrink: 0;
 }
 
-.navbar span{
+.logo{
   display:inline-block;
   margin-top:20px;
   margin-right:9px;
@@ -55,4 +55,43 @@ body{
   flex-direction:column;
   gap:20px;
   padding-left: 53px;
+}
+
+.toggle-switch{
+  width:50px;
+  height:24px;
+  border:none;
+  border-radius:20px;
+  background:#dddd;
+  position:relative;
+  cursor:pointer;
+}
+
+.toggle-circle{
+  width:20px;
+  height:20px;
+  background:#a54141dd;
+  border:none;
+  border-radius:50%;
+  position:absolute;
+  top:2px;
+  left:2px;
+}
+
+.toggle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top:150px;
+}
+
+.toggle .MoonSun {
+  position: relative;
+  top: 3px;
+}
+
+.toggle .MoonSun svg {
+  width: 20px;
+  height: 20px;
 }
