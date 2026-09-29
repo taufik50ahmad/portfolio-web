@@ -1,7 +1,21 @@
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Sandbox from "./pages/Sandbox";
+import Contact from "./pages/Contact";
+import Feedback from "./pages/Feedback";
 import "./App.css"
-import { UserRound, House, CodeXml, FlaskConical, SquareUserRound, MessageSquareQuote, Sun, MoonStar } from "lucide-react";
+import { UserRound, 
+         House, 
+         CodeXml, 
+         FlaskConical, 
+         SquareUserRound, 
+         MessageSquareQuote, 
+         Sun, 
+         MoonStar,
+         Mail } from "lucide-react";
 import { useState } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function App(){
   const [darkMode, setDarkMode] = useState(false);
@@ -33,18 +47,55 @@ export default function App(){
               onClick={()=>setPage("feedback")}
           ><MessageSquareQuote/>Feedback</li>
         </ul>
-        <div className="toggle">
-          <span className="MoonSun"><MoonStar/></span>
-          <button className={`toggle-switch ${darkMode ? "active" : ""}`} onClick={() => setDarkMode(!darkMode)}>
-            <span className="toggle-circle">
 
-            </span>
-          </button>
-          <span className="MoonSun"><Sun/></span>
+        <div className="bottom-navbar">
+          {/* Github, LinkedIn, Email */}
+          <div className="social-icons">
+            <a 
+              href="https://github.com/taufik50ahmad"
+              target="_blank"
+              rel="noopener noreferrer">
+              <span><FaGithub size={20}/></span>
+            </a>
+            <a 
+              href="https://linkedin.com/in/taufikahmad57"
+              target="_blank"
+              rel="noopener noreferrer">
+              <span><FaLinkedin size={20}/></span>
+            </a>
+            <a 
+              href="mailto:taufik50ahmad@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer">
+              <span><Mail size={20}/></span>
+            </a>
+          </div>
+
+          {/* Separator Line */}
+          <div className="line"></div>
+
+          {/* Toggle */}
+          <div className="toggle">
+            <span className="MoonSun"><MoonStar/></span>
+            <button className={`toggle-switch ${darkMode ? "active" : ""}`} onClick={() => setDarkMode(!darkMode)}>
+              <span className="toggle-circle">
+
+              </span>
+            </button>
+            <span className="MoonSun"><Sun/></span>
+          </div>
         </div>
+        
       </div>
+
+      {/* Pages */}
       <div>
-        <Home/>
+        {page === "home" && <Home/>}
+        {page === "about" && <About/>}
+        {page === "skills" && <Skills/>}
+        {page === "sandbox" && <Sandbox/>}
+        {page === "contact" && <Contact/>}
+        {page === "feedback" && <Feedback/>}
       </div>
     </div>
   )

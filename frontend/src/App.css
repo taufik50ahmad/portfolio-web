@@ -75,10 +75,16 @@ body:has(.toggle-switch.active){
   height:24px;
   border:none;
   border-radius:20px;
-  background:#84abff;
+  background:#7c7c7c;
   position:relative;
   cursor:pointer;
-  box-shadow:0px 0px 6px inset#15282b
+  box-shadow:0px 0px 6px inset#15282b;
+
+  transition: background 0.5s;
+}
+
+.navbar:has(.toggle-switch.active) .toggle-switch{
+  background:#84abff;
 }
 
 .toggle-circle{
@@ -90,7 +96,7 @@ body:has(.toggle-switch.active){
   position:absolute;
   top:2px;
   left:2px;
-  box-shadow: 0px 0px 3px inset #202020;
+  box-shadow: 0px 0px 2px inset #202020;
   transition: transform 0.3s ease;
 }
 
@@ -99,7 +105,6 @@ body:has(.toggle-switch.active){
   align-items: center;
   justify-content: center;
   gap: 15px;
-  margin-top:150px;
 }
 
 .toggle .MoonSun {
@@ -133,4 +138,35 @@ body:has(.toggle-switch.active){
 .navbar:has(.toggle-switch.active) li:hover{
   color:#0051ff;
   transition: color 0.2s ease;
+}
+
+.social-icons{
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a{
+  color:inherit;
+}
+
+.line{
+  width:130px;
+  height: 1px;
+  background: rgb(39, 39, 39);
+}
+
+.bottom-navbar{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:15px;
+  margin-top:180px;
+}
+
+.navbar:has(.toggle-switch.active) .line{
+  background: rgb(180, 180, 180);
+}
+
+.navbar:has(.toggle-switch.active){
+  border-right-color: rgb(180, 180, 180);
 }
