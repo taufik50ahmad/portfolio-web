@@ -24,9 +24,11 @@ export default function App(){
   return(
     <div className="container">
       <div className="navbar">
-        <span className="logo">
-          Taufik Ahmad
-        </span>
+        <a href={window.location.href}>
+          <span className="logo">
+            Taufik Ahmad
+          </span>
+        </a>
         <ul>
           <li className={page === "home" ? "button-active" : ""}
               onClick={()=>setPage("home")}
