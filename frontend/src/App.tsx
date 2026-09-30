@@ -18,7 +18,7 @@ import { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function App(){
-  const [darkMode, setDarkMode] = useState(false);
+  const [lightMode, setLightMode] = useState(false);
   const [page, setPage] = useState("home")
 
   return(
@@ -79,7 +79,7 @@ export default function App(){
           {/* Toggle */}
           <div className="toggle">
             <span className="MoonSun"><MoonStar/></span>
-            <button className={`toggle-switch ${darkMode ? "active" : ""}`} onClick={() => setDarkMode(!darkMode)}>
+            <button className={`toggle-switch ${lightMode ? "active" : ""}`} onClick={() => setLightMode(!lightMode)}>
               <span className="toggle-circle">
 
               </span>
@@ -91,8 +91,8 @@ export default function App(){
       </div>
 
       {/* Pages */}
-      <div>
-        {page === "home" && <Home/>}
+      <div className="pages" key={page}>
+        {page === "home" && <Home lightMode={lightMode}/>}
         {page === "about" && <About/>}
         {page === "skills" && <Skills/>}
         {page === "sandbox" && <Sandbox/>}

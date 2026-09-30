@@ -165,3 +165,19 @@ body:has(.toggle-switch.active){
 .navbar:has(.toggle-switch.active){
   border-right-color: rgb(180, 180, 180);
 }
+
+.pages{
+  animation: pageEnter 0.5s ease;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateX(5%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

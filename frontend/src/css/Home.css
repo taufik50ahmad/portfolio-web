@@ -1,10 +1,59 @@
-.intro {
+.home-container {
     margin-top:50px;
     margin-left:50px;
     font-size:11px;
+    
+    display:flex;
+    /* align-items:center; */
 }
 
 p{
     width:410px;
     text-align:justify;
+}
+
+.portrait{
+    width:250px;
+    transform: translate(170px, -31px)
+}
+
+.intro{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap:10px;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+.download{
+    display:flex;
+    align-items: center;
+    gap: 5px;
+    padding: 17px;
+    cursor:pointer;
+    border-radius:25px;
+    border:none;
+    color:white;
+    background-color:rgb(100, 100, 100);
+
+    transition: 0.1s;
+}
+
+.download:hover{
+    background-color:rgb(70, 70, 70);
+}
+
+.download.active{
+    background-color:rgb(124, 148, 255);
+}
+
+.download.active:hover{
+    background-color:rgb(97, 126, 255)
+}
+
+.download-link{
+    text-decoration: none;
 }
