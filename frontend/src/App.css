@@ -1,15 +1,12 @@
 body{
-  background-image: url(/Dark\ Mode_Wallpaper.jpg);
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
+  background-color: #111216;
   margin:0;
-  
   color: white;
+  overflow-x: hidden;
 }
 
 body:has(.toggle-switch.active){
-  background-image: url(/Light\ Mode_Wallpaper.jpg);
+  background-color: rgb(255, 255, 227);
   color:black;
 }
 
@@ -167,6 +164,8 @@ body:has(.toggle-switch.active){
 }
 
 .pages{
+  flex: 1;
+  min-width: 0;
   animation: pageEnter 0.5s ease;
 }
 

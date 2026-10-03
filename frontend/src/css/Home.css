@@ -1,20 +1,32 @@
 .home-container {
-    margin-top:50px;
-    margin-left:50px;
     font-size:11px;
-    
     display:flex;
-    /* align-items:center; */
+    flex-direction: column;
+    flex:1;
+    min-width: 0;
+    gap:5px;
 }
 
-p{
+.top-section{
+    display: flex;
+    margin: 50px 0px 0px 50px;
+}
+
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    gap: 10px;
+    justify-content:center;
+}
+
+.intro p{
     width:410px;
     text-align:justify;
 }
 
 .portrait{
-    width:250px;
-    transform: translate(170px, -31px)
+    width:420px;
+    margin: 0px 0px 0px 80px;
 }
 
 .intro{
