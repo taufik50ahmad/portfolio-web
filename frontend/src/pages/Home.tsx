@@ -1,4 +1,7 @@
-import {ArrowDownToLine} from "lucide-react"
+import {ArrowDownToLine, 
+        GraduationCap, 
+        Wrench, 
+        MapPinHouse} from "lucide-react"
 import "../css/Home.css"
 import Card from "../components/Card-home"
 
@@ -29,10 +32,40 @@ export default function Home({lightMode}: LightMode){
                 </div>
             </div>
             <div className="card-section">
-                <Card lightMode={lightMode} title="About Me" description="Short Description"/>
-                <Card lightMode={lightMode} title="About Me" description="Short Description"/>
-                <Card lightMode={lightMode} title="About Me" description="Short Description"/>
-                <Card lightMode={lightMode} title="About Me" description="Short Description"/>
+                <Card lightMode={lightMode}
+                      layout="column"
+                      subTitle="01. ABOUT ME" 
+                      title="About Me" 
+                      description="Electrical Engineering undergraduate passionate about technology, problem-solving, and web development. Currently building practical projects while learning modern development tools and frameworks."
+                      icon={[
+                        {
+                            iconLogo: GraduationCap,
+                            iconText: "Electrical Engineer"
+                            }, 
+                        {
+                            iconLogo: Wrench,
+                            iconText: "Self-Taught Developer"
+                            },
+                        {
+                            iconLogo: MapPinHouse,
+                            iconText: "Based in Medan, Indonesia"
+                            }]}/>
+
+                <Card lightMode={lightMode} 
+                      layout="row"
+                      subTitle="02. SKILLS"
+                      title="Skills" 
+                      />
+
+                <Card lightMode={lightMode}
+                      subTitle="03. SANDBOX"
+                      title="Sandbox"
+                      description="Short Description"/>
+
+                <Card lightMode={lightMode}
+                      subTitle="04. CONTACT"
+                      title="Contact"
+                      description="Short Description"/>
             </div>
         </div>
     )

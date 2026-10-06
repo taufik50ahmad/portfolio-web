@@ -2,9 +2,53 @@
     border: 1px solid rgb(41, 41, 41);
     border-radius:10px;
     min-width: 0;
-    height:280px;
+    height:310px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
 }
 
 .cards.active{
     border-color:rgb(161, 161, 161);
+}
+
+.cards .subtitle,
+.cards h1,
+.cards p{
+    margin-left:15px;
+    width:90%
+}
+
+.subtitle{
+    margin-top:15px;
+    letter-spacing: 3px;
+}
+
+.cards:not(.active) h1{
+    color:rgb(201, 201, 201);
+}
+
+.list{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    margin-left:15px;
+}
+
+.list.column{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.list.row{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.list-logo.column{
+    display:flex;
+    align-items: center;
+    gap:8px;
 }

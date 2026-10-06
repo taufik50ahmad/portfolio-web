@@ -1,7 +1,7 @@
 body{
   background-color: #111216;
   margin:0;
-  color: white;
+  color: rgb(180, 180, 180);
   overflow-x: hidden;
 }
 
@@ -18,7 +18,7 @@ body:has(.toggle-switch.active){
   width: 200px;
   height: 100vh;
   border-right: 1px solid rgb(39, 39, 39);
-  text-align:center;
+  /* text-align:center; */
   flex-shrink: 0;
 
   display:flex;
