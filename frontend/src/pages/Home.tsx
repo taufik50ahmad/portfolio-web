@@ -1,7 +1,25 @@
-import {ArrowDownToLine, 
-        GraduationCap, 
-        Wrench, 
-        MapPinHouse} from "lucide-react"
+import {
+    ArrowDownToLine, 
+    GraduationCap, 
+    Wrench, 
+    MapPinHouse,
+    Mail,
+    MoveRight
+} from "lucide-react"
+
+import {
+    FaCss3Alt,
+    FaHtml5,
+    FaGithub,
+    FaReact,
+    FaLinkedin 
+} from "react-icons/fa"
+
+import { DiJavascript } from "react-icons/di";
+import { BsTypescript } from "react-icons/bs";
+import { FaGitAlt } from "react-icons/fa6";
+import { VscVscodeInsiders } from "react-icons/vsc";
+
 import "../css/Home.css"
 import Card from "../components/Card-home"
 
@@ -52,9 +70,43 @@ export default function Home({lightMode}: LightMode){
                             }]}/>
 
                 <Card lightMode={lightMode} 
-                      layout="row"
+                      layout="skills"
                       subTitle="02. SKILLS"
-                      title="Skills" 
+                      title="Skills"
+                      icon={[
+                        {
+                            iconLogo: FaHtml5,
+                            iconText: "HTML"
+                        },
+                        {
+                            iconLogo: FaCss3Alt,
+                            iconText: "CSS"
+                        },
+                        {
+                            iconLogo: DiJavascript,
+                            iconText: "Javascript"
+                        },
+                        {
+                            iconLogo: BsTypescript,
+                            iconText: "TypeScript"
+                        },
+                        {
+                            iconLogo: FaGitAlt,
+                            iconText: "Git"
+                        },
+                        {
+                            iconLogo: FaGithub,
+                            iconText: "Github"
+                        },
+                        {
+                            iconLogo: FaReact,
+                            iconText: "React"
+                        },
+                        {
+                            iconLogo: VscVscodeInsiders,
+                            iconText: "VSCode"
+                        },
+                      ]}
                       />
 
                 <Card lightMode={lightMode}
@@ -63,9 +115,29 @@ export default function Home({lightMode}: LightMode){
                       description="Short Description"/>
 
                 <Card lightMode={lightMode}
+                      layout="me"
                       subTitle="04. CONTACT"
-                      title="Contact"
-                      description="Short Description"/>
+                      title="Get In Touch"
+                      description="Want to connect? Find my contact information and social links here."
+                      button={{
+                        text:"Contact Me",
+                        icon1: Mail,
+                        icon2: MoveRight
+                      }}
+                      icon={[
+                        {
+                            iconLogo:Mail,
+                            iconText:"taufik50ahmad@gmail.com"
+                        },
+                        {
+                            iconLogo:FaGithub,
+                            iconText:"github.com/taufik50ahmad"
+                        },
+                        {
+                            iconLogo:FaLinkedin,
+                            iconText:"linkedin.com/in/taufikahmad57"
+                        },
+                      ]}/>
             </div>
         </div>
     )

@@ -11,11 +11,16 @@ type CardProps = {
     }[];
     lightMode: boolean;
     layout?: string;
+    button?: {
+        text: string,
+        icon1?: IconType
+        icon2?: IconType
+    };
 }
 
 export default function Card(props: CardProps){
     return (
-        <div className={`cards ${props.lightMode ? "active" : ""}`}>
+        <div className={`cards ${props.lightMode ? "active" : ""} ${props.layout || ""}`}>
             <span className="subtitle">{props.subTitle}</span>
             <h1>{props.title}</h1>
             <p>{props.description}</p>
@@ -27,6 +32,19 @@ export default function Card(props: CardProps){
                     </li>
                 ))}
             </ul>
+            {props.button && (
+                <button className={`contact ${props.layout}`}>
+                    {props.button.icon1 && (
+                        <span className="icon1"><props.button.icon1/></span>
+                    )}
+                    <span className="button-text">
+                        {props.button.text}
+                    </span>
+                    {props.button.icon2 && (
+                        <span className="icon2"><props.button.icon2/></span>
+                    )}
+                </button>
+            )}
             
         </div>
     )
