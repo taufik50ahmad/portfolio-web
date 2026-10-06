@@ -23,7 +23,6 @@ import { VscVscodeInsiders } from "react-icons/vsc";
 import "../css/Home.css"
 import Card from "../components/Card-home"
 import type { Dispatch, SetStateAction } from "react";
-import { useEffect } from "react";
 
 type Props = {
     lightMode: boolean
@@ -31,10 +30,6 @@ type Props = {
 }
 
 export default function Home({lightMode, setPage}: Props){
-useEffect(()=>{
-    new Image().src="/(Light Mode) Portrait-BG.png";
-    new Image().src="/(DarkMode) Portrait-BG.png"
-},[])
     return(
         <div className="home-container">
             <div className="top-section">
