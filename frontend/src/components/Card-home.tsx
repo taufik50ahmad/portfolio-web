@@ -15,6 +15,7 @@ type CardProps = {
         text: string,
         icon1?: IconType
         icon2?: IconType
+        onClick?: ()=>void
     };
 }
 
@@ -33,7 +34,7 @@ export default function Card(props: CardProps){
                 ))}
             </ul>
             {props.button && (
-                <button className={`contact ${props.layout}`}>
+                <button className={`contact ${props.layout}`} onClick={props.button.onClick}>
                     {props.button.icon1 && (
                         <span className="icon1"><props.button.icon1/></span>
                     )}

@@ -22,12 +22,19 @@ import { VscVscodeInsiders } from "react-icons/vsc";
 
 import "../css/Home.css"
 import Card from "../components/Card-home"
+import type { Dispatch, SetStateAction } from "react";
+import { useEffect } from "react";
 
-type LightMode = {
+type Props = {
     lightMode: boolean
+    setPage: Dispatch<SetStateAction<string>>
 }
 
-export default function Home({lightMode}: LightMode){
+export default function Home({lightMode, setPage}: Props){
+useEffect(()=>{
+    new Image().src="/(Light Mode) Portrait-BG.png";
+    new Image().src="/(DarkMode) Portrait-BG.png"
+},[])
     return(
         <div className="home-container">
             <div className="top-section">
@@ -122,7 +129,8 @@ export default function Home({lightMode}: LightMode){
                       button={{
                         text:"Contact Me",
                         icon1: Mail,
-                        icon2: MoveRight
+                        icon2: MoveRight,
+                        onClick: ()=> setPage("contact")
                       }}
                       icon={[
                         {
@@ -137,7 +145,8 @@ export default function Home({lightMode}: LightMode){
                             iconLogo:FaLinkedin,
                             iconText:"linkedin.com/in/taufikahmad57"
                         },
-                      ]}/>
+                      ]}
+                      />
             </div>
         </div>
     )

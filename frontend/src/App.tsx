@@ -92,7 +92,7 @@ export default function App(){
 
       {/* Pages */}
       <div className="pages" key={page}>
-        {page === "home" && <Home lightMode={lightMode}/>}
+        {page === "home" && <Home lightMode={lightMode} setPage={setPage}/>}
         {page === "about" && <About/>}
         {page === "skills" && <Skills/>}
         {page === "sandbox" && <Sandbox/>}
