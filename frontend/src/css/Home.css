@@ -69,3 +69,39 @@ h1, h2{
 .download-link{
     text-decoration: none;
 }
+
+.card1 p{
+    width:90%;
+    margin-left:15px;
+}
+
+.card1-button{
+    background: none;
+    border:none;
+    color:inherit;
+    margin-right:15px;
+    margin-top:5px;
+
+    cursor:pointer;
+}
+
+.card1-button:hover{
+    color:rgb(82, 82, 82);
+}
+
+.card1 ul{
+    list-style-type: none;
+    margin-left:15px;
+    margin-top:20px;
+    padding:0;
+
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.card1 li{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}

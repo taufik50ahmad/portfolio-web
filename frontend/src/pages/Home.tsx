@@ -53,95 +53,65 @@ export default function Home({lightMode, setPage}: Props){
             </div>
             <div className="card-section">
                 <Card lightMode={lightMode}
-                      layout="column"
                       subTitle="01. ABOUT ME" 
-                      title="About Me" 
-                      description="Electrical Engineering undergraduate passionate about technology, problem-solving, and web development. Currently building practical projects while learning modern development tools and frameworks."
-                      icon={[
-                        {
-                            iconLogo: GraduationCap,
-                            iconText: "Electrical Engineer"
-                            }, 
-                        {
-                            iconLogo: Wrench,
-                            iconText: "Self-Taught Developer"
-                            },
-                        {
-                            iconLogo: MapPinHouse,
-                            iconText: "Based in Medan, Indonesia"
-                            }]}/>
+                      title="About Me"
+                      topRight={
+                        <button className="card1-button" onClick={()=>setPage("about")}>
+                            <MoveRight/>
+                        </button>
+                      } 
+                        >
+                        <div className="card1">
+                            <p>Electrical Engineering undergraduate passionate about technology, problem-solving, and web development. Currently building practical projects while learning modern development tools and frameworks.</p>
+                            <ul>
+                                <li><GraduationCap/>Electrical Engineering</li>
+                                <li><Wrench/>Self-Taught Developer</li>
+                                <li><MapPinHouse/>Based in Medan, Indonesia</li>
+                            </ul>
+                        </div>
+                </Card>
 
                 <Card lightMode={lightMode} 
-                      layout="skills"
                       subTitle="02. SKILLS"
                       title="Skills"
-                      icon={[
-                        {
-                            iconLogo: FaHtml5,
-                            iconText: "HTML"
-                        },
-                        {
-                            iconLogo: FaCss3Alt,
-                            iconText: "CSS"
-                        },
-                        {
-                            iconLogo: DiJavascript,
-                            iconText: "Javascript"
-                        },
-                        {
-                            iconLogo: BsTypescript,
-                            iconText: "TypeScript"
-                        },
-                        {
-                            iconLogo: FaGitAlt,
-                            iconText: "Git"
-                        },
-                        {
-                            iconLogo: FaGithub,
-                            iconText: "Github"
-                        },
-                        {
-                            iconLogo: FaReact,
-                            iconText: "React"
-                        },
-                        {
-                            iconLogo: VscVscodeInsiders,
-                            iconText: "VSCode"
-                        },
-                      ]}
-                      />
+                      >
+                        <div className="card2">
+                            <ul>
+                                <li><FaHtml5/></li>
+                                <li><FaCss3Alt/></li>
+                                <li><DiJavascript/></li>
+                                <li><BsTypescript/></li>
+                                <li><FaReact/></li>
+                                <li><FaGitAlt/></li>
+                                <li><FaGithub/></li>
+                                <li><VscVscodeInsiders/></li>
+                            </ul>
+                        </div>
+                </Card>
 
                 <Card lightMode={lightMode}
                       subTitle="03. SANDBOX"
                       title="Sandbox"
-                      description="Short Description"/>
+                      >
+                        <div className="card3">
+
+                        </div>
+                </Card>
 
                 <Card lightMode={lightMode}
-                      layout="me"
                       subTitle="04. CONTACT"
                       title="Get In Touch"
-                      description="Want to connect? Find my contact information and social links here."
-                      button={{
-                        text:"Contact Me",
-                        icon1: Mail,
-                        icon2: MoveRight,
-                        onClick: ()=> setPage("contact")
-                      }}
-                      icon={[
-                        {
-                            iconLogo:Mail,
-                            iconText:"taufik50ahmad@gmail.com"
-                        },
-                        {
-                            iconLogo:FaGithub,
-                            iconText:"github.com/taufik50ahmad"
-                        },
-                        {
-                            iconLogo:FaLinkedin,
-                            iconText:"linkedin.com/in/taufikahmad57"
-                        },
-                      ]}
-                      />
+                      >
+                        <div className="card4">
+                            <p>Feel free to reach out if you’d like to get in touch. You can find my contact and social links below.</p>
+                            <button><Mail/>Contact Me<MoveRight/></button>
+                            <ul>
+                                <li><Mail/>taufik50ahmad@gmail.com</li>
+                                <li><FaLinkedin/>linkedin.com/in/taufikahmad57</li>
+                                <li><FaGithub/>github.com/taufik50ahmad</li>
+                            </ul>
+                        </div>
+                </Card>
             </div>
         </div>
     )
