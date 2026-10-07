@@ -51,7 +51,7 @@ export default function Home({lightMode, setPage}: Props){
                     <img src={lightMode ? "/(Light Mode) Portrait-BG.png":"/(DarkMode) Portrait-BG.png"} className="portrait"/>
                 </div>
             </div>
-            <div className="card-section">
+            <div className={`card-section ${lightMode ? "active":""}`}>
                 <Card lightMode={lightMode}
                       subTitle="01. ABOUT ME" 
                       title="About Me"
@@ -64,7 +64,7 @@ export default function Home({lightMode, setPage}: Props){
                         <div className="card1">
                             <p>Electrical Engineering undergraduate passionate about technology, problem-solving, and web development. Currently building practical projects while learning modern development tools and frameworks.</p>
                             <ul>
-                                <li><GraduationCap/>Electrical Engineering</li>
+                                <li><GraduationCap/>Electrical Engineering (S.T.)</li>
                                 <li><Wrench/>Self-Taught Developer</li>
                                 <li><MapPinHouse/>Based in Medan, Indonesia</li>
                             </ul>
@@ -74,17 +74,22 @@ export default function Home({lightMode, setPage}: Props){
                 <Card lightMode={lightMode} 
                       subTitle="02. SKILLS"
                       title="Skills"
+                      bottomRight={
+                        <button className="card2-button">
+                            <MoveRight/>
+                        </button>
+                      }
                       >
                         <div className="card2">
                             <ul>
-                                <li><FaHtml5/></li>
-                                <li><FaCss3Alt/></li>
-                                <li><DiJavascript/></li>
-                                <li><BsTypescript/></li>
-                                <li><FaReact/></li>
-                                <li><FaGitAlt/></li>
-                                <li><FaGithub/></li>
-                                <li><VscVscodeInsiders/></li>
+                                <li><FaHtml5/>HTML</li>
+                                <li><FaCss3Alt/>CSS</li>
+                                <li><DiJavascript/>JavaScript</li>
+                                <li><BsTypescript/>Typescript</li>
+                                <li><FaReact/>React</li>
+                                <li><FaGitAlt/>Git</li>
+                                <li><FaGithub/>Github</li>
+                                <li><VscVscodeInsiders/>VSCode</li>
                             </ul>
                         </div>
                 </Card>
