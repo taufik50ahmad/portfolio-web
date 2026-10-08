@@ -89,6 +89,10 @@ h1, h2{
     color:rgb(82, 82, 82);
 }
 
+.card-section.active .card1-button:hover{
+    color:#929292;
+}
+
 .card1 ul{
     list-style-type: none;
     margin-left:15px;
@@ -133,7 +137,7 @@ h1, h2{
 }
 
 .card-section.active .card2 li{
-    border:none;
+    border-color:transparent;
     box-shadow: 0px 0px 4px 0px rgb(158, 158, 158);
 }
 
@@ -146,4 +150,83 @@ h1, h2{
     background: none;
     border: none;
     color:inherit;
+
+    transform: translate(-35px, -65px);
+    align-self:flex-end;
+    cursor:pointer;
+}
+
+.card-section.active .card2-button:hover{
+    color:#929292;
+}
+
+.card2-button:hover{
+    color:rgb(82, 82, 82);
+}
+
+.card4{
+    margin-left:15px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.card4-button{
+    background:none;
+    color: inherit;
+    border:1px solid rgb(177, 177, 177);
+    border-radius:20px;
+    padding:7px 15px;
+
+    display: flex;
+    max-width:75%;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.card4-button:hover{
+    color:rgb(82, 82, 82);
+    border-color: rgb(82, 82, 82);
+    transition: 0.1s ease;
+}
+
+.card-section.active .card4-button{
+    border-color: rgb(0, 0, 0);
+}
+
+.card-section.active .card4-button:hover{
+    color:#929292;
+    border-color: #929292;
+    transition: 0.1s ease;
+}
+
+.mail{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.arrow-right{
+    display: flex;
+    align-items: center;
+}
+
+.card4 ul{
+    list-style-type: none;
+    padding:0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card4 li{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.card4 svg{
+    width:20px;
+    height: 20px;
 }

@@ -24,6 +24,17 @@ body:has(.toggle-switch.active){
   display:flex;
   flex-direction: column;
   align-items:center;
+  /* gap:20px; */
+}
+
+.middle-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height:100vh;
+  justify-content:space-between;
+  margin-bottom: 30px;
 }
 
 .logo{
@@ -152,7 +163,7 @@ body:has(.toggle-switch.active){
   flex-direction: column;
   align-items: center;
   gap:15px;
-  margin-top:180px;
+  /* margin-top:180px; */
 }
 
 .navbar:has(.toggle-switch.active) .line{

@@ -75,7 +75,7 @@ export default function Home({lightMode, setPage}: Props){
                       subTitle="02. SKILLS"
                       title="Skills"
                       bottomRight={
-                        <button className="card2-button">
+                        <button className="card2-button" onClick={()=>setPage("skills")}>
                             <MoveRight/>
                         </button>
                       }
@@ -109,7 +109,10 @@ export default function Home({lightMode, setPage}: Props){
                       >
                         <div className="card4">
                             <p>Feel free to reach out if you’d like to get in touch. You can find my contact and social links below.</p>
-                            <button><Mail/>Contact Me<MoveRight/></button>
+                            <button className="card4-button" onClick={()=>setPage("contact")}>
+                                <div className="mail"><Mail/>Contact Me</div>
+                                <div className="arrow-right"><MoveRight/></div>
+                            </button>
                             <ul>
                                 <li><Mail/>taufik50ahmad@gmail.com</li>
                                 <li><FaLinkedin/>linkedin.com/in/taufikahmad57</li>
