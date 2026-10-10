@@ -4,7 +4,8 @@ import {
     Wrench, 
     MapPinHouse,
     Mail,
-    MoveRight
+    MoveRight,
+    Ellipsis
 } from "lucide-react"
 
 import {
@@ -74,11 +75,11 @@ export default function Home({lightMode, setPage}: Props){
                 <Card lightMode={lightMode} 
                       subTitle="02. SKILLS"
                       title="Skills"
-                      bottomRight={
-                        <button className="card2-button" onClick={()=>setPage("skills")}>
-                            <MoveRight/>
-                        </button>
-                      }
+                    //   bottomRight={
+                    //     <button className="card2-button" onClick={()=>setPage("skills")}>
+                    //         <MoveRight/>
+                    //     </button>
+                    //   }
                       >
                         <div className="card2">
                             <ul>
@@ -90,6 +91,11 @@ export default function Home({lightMode, setPage}: Props){
                                 <li><FaGitAlt/>Git</li>
                                 <li><FaGithub/>Github</li>
                                 <li><VscVscodeInsiders/>VSCode</li>
+                                <li>
+                                    <button className="card2-button" onClick={()=>setPage("skills")}>
+                                        <Ellipsis className="ellipsis"/>
+                                    </button>
+                                </li>
                             </ul>
                         </div>
                 </Card>

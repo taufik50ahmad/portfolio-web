@@ -40,6 +40,8 @@ h1, h2{
     margin: 0;
 }
 
+/* #region Download Button */
+
 .download{
     display:flex;
     align-items: center;
@@ -70,6 +72,10 @@ h1, h2{
     text-decoration: none;
 }
 
+/* #endregion Download Button */
+
+/* #region Card 1 */
+
 .card1 p{
     width:90%;
     margin-left:15px;
@@ -79,19 +85,27 @@ h1, h2{
     background: none;
     border:none;
     color:inherit;
-    margin-right:15px;
-    margin-top:5px;
 
     cursor:pointer;
+
+    width:40px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.1s ease;
+    border-radius: 50%;
 }
 
-.card1-button:hover{
-    color:rgb(82, 82, 82);
+/* .card1-button:active{
+    background-color: #6b6b6b;
+    border-radius: 50%;
 }
 
-.card-section.active .card1-button:hover{
-    color:#929292;
-}
+.card-section.active .card1-button:active{
+    background-color: #9e9e9e;
+    border-radius: 50%;
+} */
 
 .card1 ul{
     list-style-type: none;
@@ -109,6 +123,10 @@ h1, h2{
     align-items: center;
     gap:10px;
 }
+
+/* #endregion Card 1*/
+
+/* #region Card 2 */
 
 .card2{
     display: flex;
@@ -146,23 +164,64 @@ h1, h2{
     height:30px;
 }
 
+/* #region Card 2 Button */
+
 .card2-button{
-    background: none;
+    background: transparent;
     border: none;
     color:inherit;
+    width:69px;
+    height:63px;
+    transform: translateY(-6px);
+    border-radius:5px;
 
-    transform: translate(-35px, -65px);
-    align-self:flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
     cursor:pointer;
-}
-
-.card-section.active .card2-button:hover{
-    color:#929292;
+    transition: background-color 0.1s ease;
 }
 
 .card2-button:hover{
-    color:rgb(82, 82, 82);
+    background-color: #505050;
 }
+
+.card2-button:hover .ellipsis{
+    color:rgb(209, 209, 209);
+}
+
+.card2-button:active{
+    background-color: #868686;
+}
+
+.card-section.active .card2-button{
+    width:71px;
+    height:65px;
+    transform: translateY(-7px);
+}
+
+.card-section.active .card2-button:hover{
+    background-color: #a3a3a3;
+}
+
+.card-section.active .card2-button:active{
+    background-color: #777777;
+}
+
+.card2-button:active .ellipsis{
+    color:rgb(255, 255, 255);
+}
+
+.card-section.active .card2-button:hover .ellipsis{
+    color:#000000;
+}
+
+/* #endregion Card 2 Button*/
+
+/* #endregion Card 2 */
+
+/* #region Card 4 */
 
 .card4{
     margin-left:15px;
@@ -230,3 +289,5 @@ h1, h2{
     width:20px;
     height: 20px;
 }
+
+/* #endregion Card 4 */

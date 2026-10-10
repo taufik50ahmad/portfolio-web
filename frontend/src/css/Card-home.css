@@ -31,8 +31,40 @@
     margin-top:10px;
 }
 
-.button-topRight{
+.icon.topRight{
     background-color: none;
-    
+    margin-right:15px;
+    margin-top:5px;
+}
+
+.icon{
+    width:40px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.1s ease;
+    border-radius: 50%;
+}
+
+.icon:hover{
+    width:40px;
+    height:40px;
+    background-color: #505050;
+    border-radius: 50%;
+}
+
+.cards.active .icon:hover{
+    background-color: #a3a3a3;
+}
+
+.icon:active{
+    background-color: #868686;
+    border-radius: 50%;
+}
+
+.cards.active .icon:active{
+    background-color: #777777;
+    border-radius: 50%;
 }
 

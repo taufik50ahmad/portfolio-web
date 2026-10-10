@@ -17,14 +17,16 @@ export default function Card(props: CardProps){
                     <span className="subtitle">{props.subTitle}</span>
                     <h1>{props.title}</h1>
                 </div>
-                <div>
+                <div className="icon topRight">
                     {props.topRight && props.topRight}
                 </div>
             </div>
             
             {props.children}
 
-            {props.bottomRight && props.bottomRight}
+            <div className="icon bottom-right">
+                {props.bottomRight && props.bottomRight}
+            </div>
             
         </div>
     )
