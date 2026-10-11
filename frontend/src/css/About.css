@@ -1,0 +1,45 @@
+.about-container{
+    display: flex;
+    flex-direction: column;
+    width:98%;
+    margin:0 auto;
+}
+
+.about-me-topSection{
+    display:flex;
+    gap:15px;
+}
+
+.about-me-intro{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    flex:1.6;
+}
+
+.whatIbring{
+    flex:1;
+    border: 1px solid;
+}
+
+.whatIbring ul{
+    list-style-type: none;
+}
+
+.whatIbring-list ul{
+    display: flex;
+    flex-direction: column;
+    padding:0;
+}
+
+.whatIbring-list li{
+    display: flex;
+    gap:20px;
+}
+
+.whatIbring-list svg{
+    padding:5px;
+    background-color: aqua;
+    width:20px;
+    height:20px;
+}
