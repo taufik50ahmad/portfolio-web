@@ -76,7 +76,7 @@ export default function App(){
               </a>
             </div>
             {/* Separator Line */}
-            <div className="line"></div>
+            <div className="bottomNavbar-line"></div>
             {/* Toggle */}
             <div className="toggle">
               <span className="MoonSun"><MoonStar/></span>

@@ -11,20 +11,48 @@ export default function About(){
         <div className="about-container">
             <div className="about-me-topSection">
                 <div className="about-me-intro">
-                    <div>
-                        <span>ABOUT ME</span>
-                        <span className="about-line"></span>
+                    <div className="titleSection">
+                        <span className="about-title aboutMe">ABOUT ME</span>
+                        <span className="line about-line"></span>
                     </div>
-                    <div>
+                    <div className="paragraph-section">
                         <span>Aspiring Web & Software Developer</span>
                         <h1>HELLO, I'M TAUFIK AHMAD</h1>
                         <p>I'm an Electrical Engineering undergraduate with a strong interest in technology, software development, and problem-solving. I enjoy exploring new tools, turning ideas into practical solutions, and learning through hands-on projects. I'm currently developing my web development skills while building projects that combine creativity, functionality, and technical thinking.</p>
                     </div>
+                    <div className="howIapproach-section">     
+                        <div className="titleSection">
+                            <span className="about-title hIa">My Approach to Learning</span>
+                            <span className="line hIa-line"></span>
+                        </div>
+                        <div className="hIa-list">
+                            <ul>
+                                <li>
+                                    <span>Understand the Why</span>
+                                    <p>I focus on understanding how and why things work rather than simply memorizing instructions.</p>
+                                </li>
+                                <li>
+                                    <span>Learn by Building</span>
+                                    <p>I apply what I learn through hands-on projects to gain practical experience and turn ideas into working solutions.</p>
+                                </li>
+                                <li>
+                                    <span>Learn from Mistakes</span>
+                                    <p>I treat errors and setbacks as opportunities to improve my approach and develop better problem-solving skills.</p>
+                                </li>
+                                <li>
+                                    <span>Seek Guidance</span>
+                                    <p>When I encounter unfamiliar concepts or difficult problems, I seek advice from experienced people or use AI tools to explore solutions and clarify my understanding.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className="topSection-dividerLine">
                 </div>
                 <div className="whatIbring">
-                    <div>
-                        <span>What I Bring to the Table</span>
-                        <span className="whatIbring-line"></span>
+                    <div className="titleSection">
+                        <span className="about-title wIb">What I Bring to the Table</span>
+                        <span className="line whatIbring-line"></span>
                     </div>
                     <div className="whatIbring-list">
                         <ul>
@@ -68,11 +96,11 @@ export default function About(){
                     </div>
                 </div>
             </div>
-            <div className="about-me-middleSection">
+            <div className="about-me-bottomSection">
                 <div className="my-journey">
-                    <div>
-                        <span>MY JOURNEY</span>
-                        <span></span>
+                    <div className="titleSection">
+                        <span className="about-title myJourney">MY JOURNEY</span>
+                        <span className="line myJourney-line"></span>
                     </div>
                     <div>
                         <ul>
@@ -93,41 +121,19 @@ export default function About(){
                             </li>
                         </ul>
                     </div>
-                </div>
-            </div>
-            <div>
-                <div className="howIapproach">
-                    <div>
-                        <span>My Approach to Learning</span>
-                        <span className="howIapproach-lline"></span>
+                </div >
+                <div className="current-interest">
+                    <div className="titleSection">
+                        <span className="about-title cI">Current Interest</span>
+                        <span className="line currentInterest-line"></span>
                     </div>
-                    <div>
+                    <div className="currentInterest-list">
                         <ul>
-                            <li>
-                                <span>Understand the Why</span>
-                                <p>I focus on understanding how and why things work rather than simply memorizing instructions.</p>
-                            </li>
-                            <li>
-                                <span>Learn by Building</span>
-                                <p>I apply what I learn through hands-on projects to gain practical experience and turn ideas into working solutions.</p>
-                            </li>
-                            <li>
-                                <span>Learn from Mistakes</span>
-                                <p>I treat errors and setbacks as opportunities to improve my approach and develop better problem-solving skills.</p>
-                            </li>
-                            <li>
-                                <span>Seek Guidance</span>
-                                <p>When I encounter unfamiliar concepts or difficult problems, I seek advice from experienced people or use AI tools to explore solutions and clarify my understanding.</p>
-                            </li>
+                            <li>Frontend Development</li>
+                            <li>Backend Development</li>
+                            <li>Desktop App Development</li>
                         </ul>
                     </div>
-                </div>
-                <div className="current-interest">
-                    <ul>
-                        <li>Frontend Development</li>
-                        <li>Backend Development</li>
-                        <li>Desktop App Development with Tauri</li>
-                    </ul>
                 </div>
             </div>
         </div>

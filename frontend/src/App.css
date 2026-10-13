@@ -1,8 +1,9 @@
 body{
   background-color: #111216;
   margin:0;
-  color: rgb(180, 180, 180);
+  color: rgb(201, 201, 201);
   overflow-x: hidden;
+  transition: 0.2s ease;
 }
 
 body:has(.toggle-switch.active){
@@ -163,7 +164,7 @@ body:has(.toggle-switch.active){
   gap: 20px;
 }
 
-.line{
+.bottomNavbar-line{
   width:130px;
   height: 1px;
   background: rgb(39, 39, 39);
@@ -177,7 +178,7 @@ body:has(.toggle-switch.active){
   /* margin-top:180px; */
 }
 
-.navbar:has(.toggle-switch.active) .line{
+.navbar:has(.toggle-switch.active) .bottomNavbar-line{
   background: rgb(180, 180, 180);
 }
 
