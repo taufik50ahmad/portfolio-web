@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     gap:20px;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .line{
@@ -31,11 +31,11 @@
 .about-me-topSection{
     display:flex;
     gap:0px 40px;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .about-me-bottomSection{
-    border: 1px solid;
+    /* border: 1px solid; */
     display: flex;
     /* flex:1; */
 }
@@ -43,22 +43,29 @@
 .howIapproach-section{
     display: flex;
     flex-direction: column;
-    
 }
 
-.hIa-list ul{
-    list-style-type:decimal;
-    padding: 0;
-    margin:0;
+.hIa-list ol{
+    padding-left:15px;
+    list-style-position: outside;
 }
 
 .hIa-list li{
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.hIa-list p{
+    padding-left:10px;
+}
+
+.hIa-list-item{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .hIa-list span{
-    border: 1px solid;
+    /* border: 1px solid; */
     flex:0.2;
 }
 
@@ -67,7 +74,51 @@
 }
 
 .my-journey{
-    flex:1.7;
+    flex:3;
+}
+
+.journey-list{
+    padding:0 0 0 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    position: relative;
+}
+
+.journey-list::before{
+    content:"";
+    position: absolute;
+    left:5px;
+    top:20px;
+    width:1px;
+    height:140px;
+    background-color: currentColor;
+}
+.journey-item{
+    position: relative;
+}
+
+.journey-item::before{
+    content:"";
+    position: absolute;
+    width:9px;
+    height:9px;
+    border-radius: 50%;
+    background-color: currentColor;
+    left: -29px;
+    top:20px;
+}
+
+.journey-item::after {
+    content: "";
+    position: absolute;
+    left: -33px;
+    top: 16px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid currentColor;
+    border-radius: 50%;
 }
 
 .current-interest{

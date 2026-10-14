@@ -22,28 +22,36 @@ export default function About(){
                     </div>
                     <div className="howIapproach-section">     
                         <div className="titleSection">
-                            <span className="about-title hIa">My Approach to Learning</span>
+                            <span className="about-title hIa">MY APPROACH TO LEARNING</span>
                             <span className="line hIa-line"></span>
                         </div>
                         <div className="hIa-list">
-                            <ul>
+                            <ol>
                                 <li>
-                                    <span>Understand the Why</span>
-                                    <p>I focus on understanding how and why things work rather than simply memorizing instructions.</p>
+                                    <div className="hIa-list-item">
+                                        <span>Understand the Why</span>
+                                        <p>I focus on understanding how and why things work rather than simply memorizing instructions.</p>
+                                    </div>
                                 </li>
                                 <li>
-                                    <span>Learn by Building</span>
-                                    <p>I apply what I learn through hands-on projects to gain practical experience and turn ideas into working solutions.</p>
+                                    <div className="hIa-list-item">
+                                        <span>Learn by Building</span>
+                                        <p>I apply what I learn through hands-on projects to gain practical experience and turn ideas into working solutions.</p>
+                                    </div>
                                 </li>
                                 <li>
-                                    <span>Learn from Mistakes</span>
-                                    <p>I treat errors and setbacks as opportunities to improve my approach and develop better problem-solving skills.</p>
+                                    <div className="hIa-list-item">
+                                        <span>Learn from Mistakes</span>
+                                        <p>I treat errors and setbacks as opportunities to improve my approach and develop better problem-solving skills.</p>
+                                    </div>
                                 </li>
                                 <li>
-                                    <span>Seek Guidance</span>
-                                    <p>When I encounter unfamiliar concepts or difficult problems, I seek advice from experienced people or use AI tools to explore solutions and clarify my understanding.</p>
+                                    <div className="hIa-list-item">
+                                        <span>Seek Guidance</span>
+                                        <p>When I encounter unfamiliar concepts or difficult problems, I seek advice from experienced people or use AI tools to explore solutions and clarify my understanding.</p>
+                                    </div>
                                 </li>
-                            </ul>
+                            </ol>
                         </div>
                     </div>
                 </div>
@@ -51,7 +59,7 @@ export default function About(){
                 </div>
                 <div className="whatIbring">
                     <div className="titleSection">
-                        <span className="about-title wIb">What I Bring to the Table</span>
+                        <span className="about-title wIb">WHAT I BRING TO THE TABLE</span>
                         <span className="line whatIbring-line"></span>
                     </div>
                     <div className="whatIbring-list">
@@ -103,28 +111,29 @@ export default function About(){
                         <span className="line myJourney-line"></span>
                     </div>
                     <div>
-                        <ul>
-                            <li>
+                        <ul className="journey-list">
+                            <li className="journey-item">
                                 <span>2015 - 2018</span>
                                 <h2>Vocational High School</h2>
                                 <p>Studied Computer and Network Engineering, building foundational skills in computer hardware, networking, and technical troubleshooting.</p>
                             </li>
-                            <li>
+                            <li className="journey-item">
                                 <span>2019 - 2024</span>
                                 <h2>University</h2>
-                                <p>Pursuing a Bachelor's degree in Electrical Engineering, developing technical knowledge, analytical thinking, and problem-solving skills through engineering coursework and practical projects.</p>
+                                <p>Pursuing a Bachelor's degree in Electrical Engineering, developing technical knowledge, analytical thinking, and problem-solving skills.</p>
                             </li>
-                            <li>
+                            <li className="journey-item">
                                 <span>2024 - Present</span>
-                                <h2>University</h2>
-                                <p>Pursuing a Bachelor's degree in Electrical Engineering, developing technical knowledge, analytical thinking, and problem-solving skills through engineering coursework and practical projects.</p>
+                                <h2>Programming</h2>
+                                <p>Developing my web development skills through hands-on projects, practical applications, and continuous learning.
+                                </p>
                             </li>
                         </ul>
                     </div>
                 </div >
                 <div className="current-interest">
                     <div className="titleSection">
-                        <span className="about-title cI">Current Interest</span>
+                        <span className="about-title cI">CURRENT INTEREST</span>
                         <span className="line currentInterest-line"></span>
                     </div>
                     <div className="currentInterest-list">
