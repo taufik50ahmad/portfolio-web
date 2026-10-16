@@ -110,19 +110,23 @@ export default function About(){
                         <span className="about-title myJourney">MY JOURNEY</span>
                         <span className="line myJourney-line"></span>
                     </div>
+                    <div className="timeline"></div>
                     <div>
                         <ul className="journey-list">
                             <li className="journey-item">
+                                <span className="marker"></span>
                                 <span>2015 - 2018</span>
                                 <h2>Vocational High School</h2>
                                 <p>Studied Computer and Network Engineering, building foundational skills in computer hardware, networking, and technical troubleshooting.</p>
                             </li>
                             <li className="journey-item">
+                                <span className="marker"></span>
                                 <span>2019 - 2024</span>
                                 <h2>University</h2>
                                 <p>Pursuing a Bachelor's degree in Electrical Engineering, developing technical knowledge, analytical thinking, and problem-solving skills.</p>
                             </li>
                             <li className="journey-item">
+                                <span className="marker"></span>
                                 <span>2024 - Present</span>
                                 <h2>Programming</h2>
                                 <p>Developing my web development skills through hands-on projects, practical applications, and continuous learning.
