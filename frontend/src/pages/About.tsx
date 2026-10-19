@@ -6,9 +6,13 @@ import {
     BookOpen
 } from "lucide-react"
 
-export default function About(){
+type Props={
+    lightMode: boolean
+}
+
+export default function About(props:Props){
     return (
-        <div className="about-container">
+        <div className={`about-container ${props.lightMode ? "active" : ""}`}>
             <div className="about-me-topSection">
                 <div className="about-me-intro">
                     <div className="titleSection">
@@ -17,8 +21,8 @@ export default function About(){
                     </div>
                     <div className="paragraph-section">
                         <span>Aspiring Web & Software Developer</span>
-                        <h1>HELLO, I'M TAUFIK AHMAD</h1>
-                        <p>I'm an Electrical Engineering undergraduate with a strong interest in technology, software development, and problem-solving. I enjoy exploring new tools, turning ideas into practical solutions, and learning through hands-on projects. I'm currently developing my web development skills while building projects that combine creativity, functionality, and technical thinking.</p>
+                        <h1>A LITTLE ABOUT ME</h1>
+                        <p>I'm an Electrical Engineering undergraduate passionate about technology, software development, and problem-solving. I enjoy learning new tools and building practical projects while developing my web development skills.</p>
                     </div>
                     <div className="howIapproach-section">     
                         <div className="titleSection">
@@ -68,7 +72,7 @@ export default function About(){
                                 <div className="about-icon">
                                     <Brain/>
                                 </div>
-                                <div>
+                                <div className="wIb-text">
                                     <span>Analytical Thinking</span>
                                     <p>My Electrical Engineering background encourages me to approach problems logically, break them into smaller parts, and work toward practical solutions.</p>
                                 </div>
@@ -77,7 +81,7 @@ export default function About(){
                                 <div className="about-icon">
                                     <Hammer/>
                                 </div>
-                                <div>
+                                <div className="wIb-text">
                                     <span>Hands-on Learning</span>
                                     <p>I learn by building, experimenting, identifying problems, and refining my approach through practical projects.</p>
                                 </div>
@@ -86,7 +90,7 @@ export default function About(){
                                 <div className="about-icon">
                                     <RefreshCw/>
                                 </div>
-                                <div>
+                                <div className="wIb-text">
                                     <span>Adaptability</span>
                                     <p>I'm willing to explore unfamiliar technologies, learn new tools, and adapt my approach as project requirements evolve.</p>
                                 </div>
@@ -95,7 +99,7 @@ export default function About(){
                                 <div className="about-icon">
                                     <BookOpen/>
                                 </div>
-                                <div>
+                                <div className="wIb-text">
                                     <span>Self-Directed Learning</span>
                                     <p>Developing practical skills through independent study and personal projects.</p>
                                 </div>
@@ -144,7 +148,7 @@ export default function About(){
                         <ul>
                             <li>Frontend Development</li>
                             <li>Backend Development</li>
-                            <li>Desktop App Development</li>
+                            <li>Software Development</li>
                         </ul>
                     </div>
                 </div>
