@@ -49,7 +49,7 @@ export default function Home({lightMode, setPage}: Props){
                     </a>
                 </div>
                 <div>
-                    <img src={lightMode ? "/(Light Mode) Portrait-BG.png":"/(DarkMode) Portrait-BG.png"} className="portrait"/>
+                    <img src={lightMode ? "/(Light Mode) Portrait-BG2.png":"/(DarkMode) Portrait-BG2.png"} className="portrait"/>
                 </div>
             </div>
             <div className={`card-section ${lightMode ? "active":""}`}>
