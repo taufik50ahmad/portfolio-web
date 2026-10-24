@@ -2,7 +2,7 @@ import {
     Star,
 } from "lucide-react"
 import { skillsObject } from "../data/skillsData.js"
-
+import "../css/Skills.css"
 
 export default function Skills(){
     const updatedSkillsObject = skillsObject.map(s => {
@@ -19,7 +19,7 @@ export default function Skills(){
     })
 
     return (
-        <div>
+        <div className="skill-container">
             <div className="skillPage-topSection">
                 <div className="skillPage-titleSection">
                     <span>MY SKILLS</span>
@@ -30,7 +30,7 @@ export default function Skills(){
             </div>
             <div className="skillPage-bottomSection">
                 {updatedSkillsObject.map(s => 
-                    <div className="skillCard">
+                    <div className="skillCard" key={s.title}>
                         <div className="skillCard-topSection">
                             <div className="skillCard-iconTitle">
                                 <span>{<s.iconTitle />}</span>
@@ -47,9 +47,9 @@ export default function Skills(){
                         <div className="skillCard-bottomSection">
                             <ul>
                                 {s.skills.map((s) => 
-                                    <li>
+                                    <li key={s.text}>
                                         <div className="skillCardList-leftSide">
-                                            <span>{<s.icon />}</span>
+                                            <img src={s.icon} alt={s.text}/>
                                             <span>{s.text}</span>
                                         </div>
                                         <div className="skillCardList-rightSide">
