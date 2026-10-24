@@ -7,19 +7,20 @@ import { type LucideIcon,
     BookOpen
  } from "lucide-react"
 
-import Html from "../assets/icons/html5/html5-original.svg"
-import Css from "../assets/icons/css3/css3-original.svg"
-import Js from "../assets/icons/javascript/javascript-original.svg"
-import Ts from "../assets/icons/typescript/typescript-original.svg"
-import ReactIcon from "../assets/icons/react/react-original.svg"
-import NodeJs from "../assets/icons/nodejs/nodejs-original.svg"
-import Express from "../assets/icons/express/express-original.svg"
-import PgSQL from "../assets/icons/postgresql/postgresql-original.svg"
-import Git from "../assets/icons/git/git-original.svg"
-import Github from "../assets/icons/github/github-original.svg"
-import VSCode from "../assets/icons/vscode/vscode-original.svg"
-import Tauri from "../assets/icons/tauri/tauri-original.svg"
-import Docker from "../assets/icons/docker/docker-original.svg"
+import Html from "../assets/icons/used/html5/html5-original.svg"
+import Css from "../assets/icons/used/css3/css3-original.svg"
+import Js from "../assets/icons/used/javascript/javascript-original.svg"
+import Ts from "../assets/icons/used/typescript/typescript-original.svg"
+import ReactIcon from "../assets/icons/used/react/react-original.svg"
+import NodeJs from "../assets/icons/used/nodejs/nodejs-original.svg"
+import Express from "../assets/icons/used/express/express-original.svg"
+import Postman from "../assets/icons/used/postman/postman-original.svg"
+import PgSQL from "../assets/icons/used/postgresql/postgresql-original.svg"
+import Git from "../assets/icons/used/git/git-original.svg"
+import Github from "../assets/icons/used/github/github-original.svg"
+import VSCode from "../assets/icons/used/vscode/vscode-original.svg"
+import Tauri from "../assets/icons/used/tauri/tauri-original.svg"
+import Docker from "../assets/icons/used/docker/docker-original.svg"
 
 type SkillCardProps = {
     iconTitle:LucideIcon
@@ -54,7 +55,8 @@ export const skillsObject:SkillCardProps[] = [
         status:"",
         skills:[
             {icon: NodeJs, text:"Node.js", score:75},
-            {icon: Express, text:"Express", score:60}
+            {icon: Express, text:"Express", score:60},
+            {icon: Postman, text:"Postman", score:70}
         ]
     },
     {
