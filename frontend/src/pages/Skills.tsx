@@ -4,7 +4,11 @@ import {
 import { skillsObject } from "../data/skillsData.js"
 import "../css/Skills.css"
 
-export default function Skills(){
+type Props={
+    lightMode: boolean
+}
+
+export default function Skills(props: Props){
     const updatedSkillsObject = skillsObject.map(s => {
         const average = s.skills.reduce((total, u) => total + u.score, 0) / s.skills.length 
 
@@ -19,7 +23,7 @@ export default function Skills(){
     })
 
     return (
-        <div className="skill-container">
+        <div className={`skill-container ${props.lightMode ? "active" : ""}`}>
             <div className="skillPage-topSection">
                 <div className="skillPage-titleSection">
                     <span>MY SKILLS</span>
