@@ -74,7 +74,7 @@ export const skillsObject:SkillCardProps[] = [
         description:"Tools that help medevelop test, and deploy projects efficiently.",
         status:"",
         skills:[
-            {icon: Git, text:"Git", score:70},
+            {icon: Git, text:"Git", score:90},
             {icon: Github, text:"Gitub", score:75},
             {icon: VSCode, text:"VSCode", score:80}
         ]

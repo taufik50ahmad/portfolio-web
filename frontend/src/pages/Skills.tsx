@@ -13,7 +13,7 @@ export default function Skills(){
                 status:
                     average >= 75 ? "Confident" :
                     average >= 50 ? "Comfortable" :
-                    average >= 25 ? "fammiliar" :
+                    average >= 25 ? "Familiar" :
                     "Learning"
         }
     })
@@ -57,7 +57,11 @@ export default function Skills(){
                                         <div className="skillCardList-rightSide">
                                             <div className="stars">
                                                 <span className="grey-stars"><Star/><Star/><Star/><Star/><Star/></span>
-                                                <span className="gold-stars"><Star/><Star/><Star/><Star/><Star/></span>
+                                                <span className="gold-star-mask" style={{width: `${s.score}%`}}>
+                                                    <span className="gold-stars">
+                                                        <Star/><Star/><Star/><Star/><Star/>
+                                                    </span>
+                                                </span>
                                             </div>
                                             <div className="percentage">
                                                 <span>{s.score}%</span>

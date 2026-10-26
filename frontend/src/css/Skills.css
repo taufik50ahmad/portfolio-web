@@ -34,7 +34,8 @@
 .skillCardList-rightSide{
     display: flex;
     align-items: center;
-    gap:10px;
+    /* gap:5px; */
+    
 }
 
 .skillCard{
@@ -89,32 +90,55 @@
 .stars svg{
     width:12px;
     height:12px;
-    /* display: block; */
-    /* flex-shrink: 0; */
 }
 
 .stars{
     position:relative;
-    /* display: inline-block; */
-    display: flex;
-    /* justify-content: center; */
+    width: 60px;
+    height: 14px;
 }
 
-.grey-stars,
-.gold-stars{
-    /* display: flex;
-    white-space: nowrap; */
+.gold-star-mask{
+    position: absolute;
+    overflow: hidden;
+    height:22px;
+
+    top: 0;
+    left: 0;
+
+    z-index: 2;
 }
 
 .grey-stars{
+    position: absolute;
     z-index: 1;
+
+    top: 0;
+    left: 0;
+
+    display: flex;
 }
 
 .gold-stars{
     position: absolute;
     top: 0;
-    left: 0;
-    z-index: 2;
+    left: 0;    
+    display: flex;
+}
+
+.grey-stars svg {
+  fill: grey;
+  color: grey;
+}
+
+.gold-stars svg {
+  fill: gold;
+  color: gold;
+}
+
+.percentage{
+    width:45px;
+    text-align: right;
 }
 
 /* #endregion */
