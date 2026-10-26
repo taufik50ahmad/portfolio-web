@@ -35,12 +35,14 @@ export default function Skills(){
                             <div className="skillCard-iconTitle">
                                 <span>{<s.iconTitle />}</span>
                             </div>
-                            <div className="skillCard-titlePgr">
-                                <h2>{s.title}</h2>
-                                <p>{s.description}</p>
-                            </div>
-                            <div className="skillCard-status">
-                                <span>{s.status}</span>
+                            <div className="skillCard-titleStatus">
+                                <div className="skillCard-titlePgr">
+                                    <h2>{s.title}</h2>
+                                    <p>{s.description}</p>
+                                </div>
+                                <div className="skillCard-status">
+                                    <span>{s.status}</span>
+                                </div>
                             </div>
                         </div>
                         
@@ -54,8 +56,8 @@ export default function Skills(){
                                         </div>
                                         <div className="skillCardList-rightSide">
                                             <div className="stars">
-                                                <span><Star/><Star/><Star/><Star/><Star/></span>
-                                                <span><Star/><Star/><Star/><Star/><Star/></span>
+                                                <span className="grey-stars"><Star/><Star/><Star/><Star/><Star/></span>
+                                                <span className="gold-stars"><Star/><Star/><Star/><Star/><Star/></span>
                                             </div>
                                             <div className="percentage">
                                                 <span>{s.score}%</span>

@@ -1,6 +1,120 @@
+.skill-container{
+    margin:10px 0 0 10px;
+}
+
+/* #region Card Section */
+
 .skillPage-bottomSection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+}
+
+.skillCard-bottomSection ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
     display: flex;
+    flex-direction: column;
+    gap:10px;
+    /* margin-left:22px; */
+}
+
+.skillCard-bottomSection li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skillCardList-leftSide{
+    display: flex;
+    gap:10px;
+}
+
+.skillCardList-rightSide{
+    display: flex;
+    align-items: center;
+    gap:10px;
 }
 
 .skillCard{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    border: 1px solid;
+    border-radius:10px;
+    padding:20px;
 }
+
+.skillCard-topSection{
+    display: flex;
+    gap:15px;
+}
+
+.skillCard-titleStatus{
+    display: flex;
+}
+
+.skillCard-titlePgr h2{
+    margin: 0;
+    font-size:15px;
+}
+
+.skillCard-titlePgr p{
+    font-size:12px;
+}
+
+.skillCard-status span{
+    font-size: 10px;
+}
+
+.skillCard-status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(49, 77, 102);
+    border-radius: 20px;
+    padding:10px;
+    height:30px;
+    margin:-5px;
+}
+
+
+.skillCardList-leftSide img{
+    width:20px;
+    height:20px;
+}
+
+.stars svg{
+    width:12px;
+    height:12px;
+    /* display: block; */
+    /* flex-shrink: 0; */
+}
+
+.stars{
+    position:relative;
+    /* display: inline-block; */
+    display: flex;
+    /* justify-content: center; */
+}
+
+.grey-stars,
+.gold-stars{
+    /* display: flex;
+    white-space: nowrap; */
+}
+
+.grey-stars{
+    z-index: 1;
+}
+
+.gold-stars{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* #endregion */
