@@ -31,6 +31,7 @@ type SkillCardProps = {
         icon:string
         text:string
         score:number
+        invert?:boolean
     }[]
 }
 
@@ -55,7 +56,7 @@ export const skillsObject:SkillCardProps[] = [
         status:"",
         skills:[
             {icon: NodeJs, text:"Node.js", score:75},
-            {icon: Express, text:"Express", score:60},
+            {icon: Express, text:"Express", score:60, invert:true},
             {icon: Postman, text:"Postman", score:70}
         ]
     },
@@ -75,7 +76,7 @@ export const skillsObject:SkillCardProps[] = [
         status:"",
         skills:[
             {icon: Git, text:"Git", score:75},
-            {icon: Github, text:"Gitub", score:75},
+            {icon: Github, text:"Gitub", score:75, invert:true},
             {icon: VSCode, text:"VSCode", score:80}
         ]
     },

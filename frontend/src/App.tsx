@@ -94,7 +94,7 @@ export default function App(){
       <div className="pages" key={page}>
         {page === "home" && <Home lightMode={lightMode} setPage={setPage}/>}
         {page === "about" && <About lightMode={lightMode}/>}
-        {page === "skills" && <Skills/>}
+        {page === "skills" && <Skills lightMode={lightMode}/>}
         {page === "sandbox" && <Sandbox/>}
         {page === "contact" && <Contact/>}
         {page === "feedback" && <Feedback/>}

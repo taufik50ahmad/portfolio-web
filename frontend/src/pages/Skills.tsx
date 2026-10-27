@@ -55,7 +55,7 @@ export default function Skills(props: Props){
                                 {s.skills.map((s) => 
                                     <li key={s.text}>
                                         <div className="skillCardList-leftSide">
-                                            <img src={s.icon} alt={s.text}/>
+                                            <img src={s.icon} alt={s.text} className={s.invert ? "invert-icon" : ""}/>
                                             <span>{s.text}</span>
                                         </div>
                                         <div className="skillCardList-rightSide">
