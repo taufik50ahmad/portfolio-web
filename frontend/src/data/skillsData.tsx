@@ -63,7 +63,7 @@ export const skillsObject:SkillCardProps[] = [
     {
         iconTitle: Database,
         title:"Database",
-        description:"Managing and working with relational databases using PostgreSQL.",
+        description:"Working with relational databases in PostgreSQL.",
         status:"",
         skills:[
             {icon: PgSQL, text:"PostgreSQL", score:60}
