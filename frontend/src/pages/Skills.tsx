@@ -26,10 +26,13 @@ export default function Skills(props: Props){
         <div className={`skill-container ${props.lightMode ? "active" : ""}`}>
             <div className="skillPage-topSection">
                 <div className="skillPage-titleSection">
-                    <span>MY SKILLS</span>
+                    <span className="skillTitle">MY SKILLS</span>
                     <span className="titleLine"></span>
                 </div>
-                <h2>Skills & Technologies</h2>
+                <div>
+                    <h2>Skills &</h2>
+                    <h2> Technologies</h2>
+                </div>
                 <p>Here are the technologies and tools I've worked with and I'm currently learning. Each skill shows my current level of comfort and experience.</p>
             </div>
             <div className="skillPage-bottomSection">
