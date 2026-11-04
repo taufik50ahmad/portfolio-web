@@ -10,6 +10,8 @@
     gap:15px;
 }
 
+/* #region Top Section of Skill Page */
+
 .skillPage-titleSection{
     display: flex;
     align-items: center;
@@ -48,190 +50,231 @@
     width:40%;
 }
 
-/* #region Card Section */
-
-.skillPage-bottomSection{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows:1fr;
-    gap:10px;
-
-    justify-content: center;
-}
-
-.skillCard-bottomSection ul{
-    list-style-type: none;
-    padding:0;
-    margin:0;
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-    /* margin-left:22px; */
-}
-
-.skillCard-bottomSection li{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.skillCardList-leftSide{
-    display: flex;
-    gap:15px;
-    align-items: center;
-}
-
-.skillCardList-leftSide span{
-    font-size: 11px;
-}
-
-.skillCardList-rightSide{
-    display: flex;
-    align-items: center;
-    /* gap:5px; */
-    
-}
-
-.skillCard{
-    display: flex;
-    flex-direction: column;
-    gap:15px;
-    border: 1px solid rgb(65, 65, 65);
-    border-radius:10px;
-    padding:15px 20px 20px 20px;
-
-    grid-column: span 2;
-}
-
-.skill-container.active .skillCard{
-    border-color: rgb(161, 161, 161);
-}
-
-.skillCard:nth-child(4){
-    grid-column: 2 / span 2
-}
-
-.skillCard-iconTitle svg{
-    margin-bottom:10px;
-    margin-left:-5px;
-    background-color: aliceblue;
-    border-radius: 50%;
-    padding:7px;
-    color:rgb(0, 107, 194);
-
-    box-sizing: content-box;
-}
-
-.skill-container.active .skillCard-iconTitle svg{
-    color:black;
-}
-
-.skillCard-topSection{
-    display: flex;
-    gap:15px;
-    align-items: center;
-}
-
-.skillCard-titleStatus{
-    display: flex;
-}
-
-.skillCard-titlePgr{
-    display: flex;
-    flex-direction: column;
-    gap:5px;
-}
-
-.skillCard-titlePgr h2{
-    margin: 0;
-    font-size:15px;
-}
-
-.skillCard-titlePgr p{
-    font-size:11px;
-    margin: 0;
-    width:90%;
-}
-
-.skillCard-status span{
-    font-size: 9px;
-}
-
-.skillCard-status{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: rgb(49, 77, 102);
-    border-radius: 20px;
-    padding:10px;
-    height:30px;
-    margin:-5px;
-}
+/* #endregion */
 
 
-.skillCardList-leftSide img{
-    width:15px;
-    height:15px;
-}
+/* #region Bottom Section of Skill Page (Card Section) */
 
-.skill-container:not(.active) .invert-icon{
-    filter: invert(1);
-}
+    /* #region Top Section of Skill Card */
 
-.stars svg{
-    width:12px;
-    height:12px;
-}
+    .skillCard-topSection{
+        display: flex;
+        gap:15px;
+        align-items: center;
+    }
 
-.stars{
-    position:relative;
-    width: 60px;
-    height: 14px;
-}
+        /* #region Title/Main Icon of Each Card */
 
-.gold-star-mask{
-    position: absolute;
-    overflow: hidden;
-    height:22px;
+        .skillCard-iconTitle svg{
+            margin-bottom:10px;
+            margin-left:-5px;
+            background-color: rgb(94, 99, 104);
+            border-radius: 50%;
+            padding:7px;
+            color:rgb(198, 229, 255);
 
-    top: 0;
-    left: 0;
+            box-sizing: content-box;
+        }
 
-    z-index: 2;
-}
+        .skill-container.active .skillCard-iconTitle svg{
+            color:black;
+            background-color: rgb(179, 219, 253);
+        }
 
-.grey-stars{
-    position: absolute;
-    z-index: 1;
+        /* #endregion */
 
-    top: 0;
-    left: 0;
+        /* #region Title, Description, & Status */
 
-    display: flex;
-}
+        .skillCard-titleStatus{
+            display: flex;
+        }
 
-.gold-stars{
-    position: absolute;
-    top: 0;
-    left: 0;    
-    display: flex;
-}
+        .skillCard-titlePgr{
+            display: flex;
+            flex-direction: column;
+            gap:5px;
+        }
 
-.grey-stars svg {
-  fill: grey;
-  color: grey;
-}
+        .skillCard-titlePgr h2{
+            margin: 0;
+            font-size:15px;
+        }
 
-.gold-stars svg {
-  fill: gold;
-  color: gold;
-}
+        .skillCard-titlePgr p{
+            font-size:11px;
+            margin: 0;
+            width:90%;
+        }
 
-.percentage{
-    width:45px;
-    text-align: right;
-    font-size: 11px;
-}
+        .skillCard-status span{
+            font-size: 9px;
+        }
+
+        .skillCard-status{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: rgb(49, 77, 102);
+            border-radius: 20px;
+            padding:10px;
+            height:30px;
+            margin:-5px;
+        }
+
+        .skill-container.active .skillCard-status{
+            background-color: rgb(179, 219, 253);
+            color:black;
+        }
+
+        /* #endregion */
+
+    /* #endregion */
+        
+    /* #region Bottom Section of Skill Page */
+
+    .skillPage-bottomSection{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows:1fr;
+        gap:10px;
+
+        justify-content: center;
+    }
+
+    /* #endregion */
+
+    /* #region Bottom Section of Skill Card */
+
+    .skillCard-bottomSection ul{
+        list-style-type: none;
+        padding:0;
+        margin:0;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        /* margin-left:22px; */
+    }
+
+    .skillCard-bottomSection li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* #endregion */
+
+    /* #region Left Section inside Bottom Section of Skill Card */
+
+    .skillCardList-leftSide{
+        display: flex;
+        gap:15px;
+        align-items: center;
+    }
+
+    .skillCardList-leftSide span{
+        font-size: 11px;
+    }
+
+    .skillCardList-leftSide img{
+        width:15px;
+        height:15px;
+    }
+
+    .skill-container:not(.active) .invert-icon{
+        filter: invert(1);
+    }
+
+    /* #endregion */
+
+    /* #region Right Section inside Bottom Section of Skill Card */
+
+    .skillCardList-rightSide{
+        display: flex;
+        align-items: center;
+        /* gap:5px; */
+    }
+
+    .stars svg{
+        width:12px;
+        height:12px;
+    }
+
+    .stars{
+        position:relative;
+        width: 60px;
+        height: 14px;
+    }
+
+    .gold-star-mask{
+        position: absolute;
+        overflow: hidden;
+        height:22px;
+
+        top: 0;
+        left: 0;
+
+        z-index: 2;
+    }
+
+    .grey-stars{
+        position: absolute;
+        z-index: 1;
+
+        top: 0;
+        left: 0;
+
+        display: flex;
+    }
+
+    .gold-stars{
+        position: absolute;
+        top: 0;
+        left: 0;    
+        display: flex;
+    }
+
+    .grey-stars svg {
+    fill: grey;
+    color: grey;
+    }
+
+    .gold-stars svg {
+    fill: gold;
+    color: gold;
+    }
+
+    .percentage{
+        width:45px;
+        text-align: right;
+        font-size: 11px;
+    }
+
+    /* #endregion */
+
+    /* #region General Setting for Skill Card */
+
+    .skillCard{
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+        border: 1px solid rgb(65, 65, 65);
+        border-radius:10px;
+        padding:15px 20px 20px 20px;
+
+        grid-column: span 2;
+    }
+
+
+
+    .skill-container.active .skillCard{
+        border-color: rgb(161, 161, 161);
+    }
+
+    .skillCard:nth-child(4){
+        grid-column: 2 / span 2
+    }
+
+    /* #endregion */
 
 /* #endregion */
